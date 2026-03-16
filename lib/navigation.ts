@@ -43,8 +43,8 @@ export const Navigations = [
       },
       {
         id: 43,
-        name: "Donation Via Paypal",
-        href: "/donation/donation-via-paypal",
+        name: "Donation Via Bank",
+        href: "/donation/donation-via-bank",
       },
     ],
   },
@@ -69,7 +69,6 @@ export const Navigations = [
     href: "/kontakt",
   },
 ];
-
 
 
 
