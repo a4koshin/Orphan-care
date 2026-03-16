@@ -128,11 +128,11 @@ const Footer = () => {
                       <FaMapMarkerAlt className="w-4 h-4 text-slate-400 group-hover:text-blue-400 transition-colors" />
                     </div>
                     <div>
-                      <span className="text-slate-400 text-sm block">
-                        Underhaugsgata 3
+                      <span className="text-slate-400 text-sm">
+                        Mogadishu-
                       </span>
                       <span className="text-slate-400 text-sm">
-                        1607 Fredrikstad, Norway
+                        Somalia
                       </span>
                     </div>
                   </div>
@@ -142,10 +142,10 @@ const Footer = () => {
                       <FaPhoneAlt className="w-4 h-4 text-slate-400 group-hover:text-blue-400 transition-colors" />
                     </div>
                     <a
-                      href="tel:+47484860886"
+                      href="tel:00000000000"
                       className="text-slate-400 hover:text-white transition-colors text-sm"
                     >
-                      +47 484 60 886
+                      00000000000
                     </a>
                   </div>
                   
@@ -154,10 +154,10 @@ const Footer = () => {
                       <FaEnvelope className="w-4 h-4 text-slate-400 group-hover:text-blue-400 transition-colors" />
                     </div>
                     <a
-                      href="mailto:innvandrerforumiostfold@gmail.com"
+                      href="mailto:info@orphancare.net"
                       className="text-slate-400 hover:text-white transition-colors text-sm break-all"
                     >
-                      innvandrerforumiostfold@gmail.com
+                      info@orphancare.net
                     </a>
                   </div>
                 </div>
