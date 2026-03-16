@@ -3,12 +3,9 @@ import { useState } from "react";
 import { Navigations } from "@/lib/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "./ui/button";
-import {  RiArrowDownSLine } from "react-icons/ri";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
-
 import { LuMenu } from "react-icons/lu";
-
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,19 +32,20 @@ const Header = () => {
                     {/* Parent */}
                     <Link
                       href={item.href}
-                      className="flex items-center gap-x-1 text-sm font-medium text-gray-700 hover:text-red-600"
+                      className="flex items-center gap-x-1 text-sm font-medium text-gray-700 transition-colors hover:text-green-600"
+                      aria-haspopup="menu"
                     >
                       {item.name}
-                      <RiArrowDownSLine className="text-lg" />
+                      <RiArrowDownSLine className="text-lg transition-transform group-hover:rotate-180" />
                     </Link>
 
                     {/* Dropdown */}
-                    <div className="absolute -left-18 mt-2 w-64 rounded-xl border border-gray-100 bg-red-50 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                    <div className="invisible absolute left-0 top-full mt-2 w-64 rounded-xl border border-gray-100 bg-white p-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                       {item.children?.map((child) => (
                         <Link
                           key={child.id}
                           href={child.href}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-600"
+                          className="block rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-50 hover:text-green-600"
                         >
                           {child.name}
                         </Link>
@@ -61,7 +59,7 @@ const Header = () => {
                 <Link
                   key={item.id}
                   href={item.href}
-                  className="text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+                  className="text-sm font-medium text-gray-700 hover:text-green-600 transition-colors"
                 >
                   {item.name}
                 </Link>
@@ -71,7 +69,10 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => {
+              setIsOpen(!isOpen);
+              if (isOpen) setOpenSub(null);
+            }}
             className="md:hidden px-2 py-2 border border-red-200 rounded-lg bg-red-50 text-blue-950"
           >
             {isOpen ? (
