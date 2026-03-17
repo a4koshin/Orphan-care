@@ -16,6 +16,8 @@ const HomePage = () => {
     return () => clearInterval(interval);
   }, []);
 
+
+  
   return (
     <main>
       <section className="relative min-h-[82vh] overflow-hidden">
