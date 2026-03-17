@@ -1,67 +1,79 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { heroImg } from "@/lib/heroImages";
 
 const HomePage = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (!heroImg.length) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % heroImg.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <main className="relative overflow-hidden bg-slate-50">
-      <section className="mx-auto grid min-h-[76vh] max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 md:px-8 md:py-20">
-        <div className="space-y-6">
-          <p className="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1 text-xs font-medium tracking-wide text-emerald-700">
-            Stöd föräldralösa barn i Somalia
-          </p>
+    <main>
+      <section className="relative min-h-[82vh] overflow-hidden">
+        {heroImg.map((img, index) => (
+          <Image
+            key={img.id}
+            src={img.image}
+            alt="Orphan Care hero image"
+            fill
+            priority={index === 0}
+            className={`object-cover transition-opacity duration-700 ${
+              index === currentIndex ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
 
-          <h1 className="max-w-xl text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl">
-            Tillsammans ger vi barn en tryggare framtid
-          </h1>
+        <div className="absolute inset-0 bg-black/60" />
 
-          <p className="max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
-            Orphan Care grundades i Sverige 2010 och arbetar långsiktigt med
-            utbildning, omsorg och hopp för barn i nöd. Med ditt stöd kan fler
-            barn få en säker uppväxt och bättre möjligheter i livet.
-          </p>
-
-          <div className="flex flex-wrap gap-3">
-            <a
-              href="/donation"
-              className="rounded-lg bg-emerald-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
-            >
-              Ge en gåva
-            </a>
-            <a
-              href="/omoss/om-orphan-care"
-              className="rounded-lg border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-white"
-            >
-              Läs mer om oss
-            </a>
+        <div className="relative z-10 mx-auto flex min-h-[82vh] max-w-7xl justify-center items-center text-center px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl space-y-6 text-white">
+            <p className="inline-flex rounded-full border border-white/40 bg-white/20 px-4 py-1 text-xs font-medium tracking-wide">
+              Välkommen till Orphan Care
+            </p>
+            <h1 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
+              Bygger en ljusare framtid för föräldralösa barn
+            </h1>
+            <p className="text-base leading-relaxed text-white/90 sm:text-lg">
+              Through quality education, compassionate care, and continuous
+              support, we empower orphaned children to rise above life’s
+              challenges.
+            </p>
+            <div className="flex justify-center items-center flex-wrap gap-3">
+              <a
+                href="/donation"
+                className="rounded-lg bg-emerald-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
+              >
+                Donera nu
+              </a>
+              <a
+                href="/omoss/om-orphan-care"
+                className="rounded-lg border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+              >
+                Läs mer
+              </a>
+            </div>
           </div>
-
-          <div className="grid max-w-md grid-cols-3 gap-3 pt-2">
-            <div className="rounded-lg border border-slate-200 bg-white p-3 text-center">
-              <p className="text-lg font-semibold text-slate-900">2010</p>
-              <p className="text-xs text-slate-500">Grundat</p>
-            </div>
-            <div className="rounded-lg border border-slate-200 bg-white p-3 text-center">
-              <p className="text-lg font-semibold text-slate-900">300+</p>
-              <p className="text-xs text-slate-500">Månadsgivare</p>
-            </div>
-            <div className="rounded-lg border border-slate-200 bg-white p-3 text-center">
-              <p className="text-lg font-semibold text-slate-900">100%</p>
-              <p className="text-xs text-slate-500">Hjärta</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="relative mx-auto w-full max-w-xl">
-          <div className="absolute -right-5 -top-5 h-20 w-20 rounded-2xl bg-emerald-200/60 blur-xl" />
-          <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
-            <Image
-              src="/img2.jpg"
-              alt="Barn som får stöd genom Orphan Care"
-              width={900}
-              height={1100}
-              priority
-              className="h-[420px] w-full rounded-xl object-cover sm:h-[500px]"
-            />
+          <div className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+            {heroImg.map((img, index) => (
+              <button
+                key={img.id}
+                type="button"
+                aria-label={`Go to slide ${index + 1}`}
+                onClick={() => setCurrentIndex(index)}
+                className={`h-2.5 rounded-full transition-all ${
+                  index === currentIndex ? "w-8 bg-white" : "w-2.5 bg-white/60"
+                }`}
+              />
+            ))}
           </div>
         </div>
       </section>
