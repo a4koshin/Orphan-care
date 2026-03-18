@@ -17,7 +17,7 @@ const HomePage = () => {
   }, []);
 
 
-  
+
   return (
     <main>
       <section className="relative min-h-[82vh] overflow-hidden">
@@ -41,7 +41,7 @@ const HomePage = () => {
             <p className="inline-flex rounded-full border border-white/40 bg-white/20 px-4 py-1 text-xs font-medium tracking-wide">
               Välkommen till Orphan Care
             </p>
-            <h1 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-5xl">
               Bygger en ljusare framtid för föräldralösa barn
             </h1>
             <p className="text-base leading-relaxed text-white/90 sm:text-lg">
