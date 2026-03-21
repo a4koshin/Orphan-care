@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { heroImg } from "@/lib/heroImages";
+import { picData } from "@/lib/picData";
+import PicCard from "@/components/PicCards";
 
 const HomePage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -81,6 +83,13 @@ const HomePage = () => {
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div className="mx-auto w-full max-w-3xl space-y-5 md:order-1">
+            <p className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-500">
+              <span className="inline-flex items-center gap-1">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+              </span>
+              vilka vi är
+            </p>
             <h2 className="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl">
               Välkommen till Orphan Care
             </h2>
@@ -94,8 +103,8 @@ const HomePage = () => {
               Organisationen har idag cirka 300 månadsgivare.
               <br />
               Orphan Care anser att utbildning är oerhört viktigt att förbättra
-              livet för föräldralösa barn och barn i nöd. Att utbilda barn är ett
-              av dem bästa sättet att erbjuda dem en bättre framtid.
+              livet för föräldralösa barn och barn i nöd. Att utbilda barn är
+              ett av dem bästa sättet att erbjuda dem en bättre framtid.
             </p>
           </div>
           <div className="md:order-2">
@@ -122,6 +131,13 @@ const HomePage = () => {
             />
           </div>
           <div className="mx-auto w-full max-w-3xl space-y-5 md:order-2">
+            <p className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-500">
+              <span className="inline-flex items-center gap-1">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+              </span>
+              Utbildning
+            </p>
             <h2 className="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl">
               Skolgång för framtiden
             </h2>
@@ -138,6 +154,31 @@ const HomePage = () => {
               flickor och pojkar. Men det finns många fler som behöver hjälp.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div>
+          <p className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-500">
+            <span className="inline-flex items-center gap-1">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+            </span>
+            Utbildning
+          </p>
+          <h2 className="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl">
+            Skolgång för framtiden
+          </h2>
+        </div>
+        <div className="flex justify-center items-center gap-8">
+          {picData.map((card) => (
+          <PicCard
+            key={card.id}
+            title={card.title}
+            description={card.description}
+            image={card.img}
+          />
+        ))}
         </div>
       </section>
     </main>
