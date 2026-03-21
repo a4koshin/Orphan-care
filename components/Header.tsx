@@ -73,7 +73,7 @@ const Header = () => {
               setIsOpen(!isOpen);
               if (isOpen) setOpenSub(null);
             }}
-            className="md:hidden px-2 py-2 border border-red-200 rounded-lg bg-red-50 text-blue-950"
+            className="md:hidden px-2 py-2 border border-green-200 rounded-lg bg-green-50 text-blue-950"
           >
             {isOpen ? (
               <IoMdClose className="text-xl" />
