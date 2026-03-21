@@ -16,8 +16,6 @@ const HomePage = () => {
     return () => clearInterval(interval);
   }, []);
 
-
-
   return (
     <main>
       <section className="relative min-h-[82vh] overflow-hidden">
@@ -76,6 +74,69 @@ const HomePage = () => {
                 }`}
               />
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid items-center gap-10 md:grid-cols-2">
+          <div className="mx-auto w-full max-w-3xl space-y-5 md:order-1">
+            <h2 className="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl">
+              Välkommen till Orphan Care
+            </h2>
+            <p className="text-base leading-relaxed text-slate-700 sm:text-lg">
+              Orphan Care är en välgörenhetsorganisation som är partipolitiskt
+              oberoende och personliga intresse. Organisationen grundades av en
+              grupp aktiva somalier 2010 i Sverige som brinner för att hjälpa
+              främst föräldralösa barn i Somalia.
+              <br />
+              <br />
+              Organisationen har idag cirka 300 månadsgivare.
+              <br />
+              Orphan Care anser att utbildning är oerhört viktigt att förbättra
+              livet för föräldralösa barn och barn i nöd. Att utbilda barn är ett
+              av dem bästa sättet att erbjuda dem en bättre framtid.
+            </p>
+          </div>
+          <div className="md:order-2">
+            <Image
+              src="/who.png"
+              alt="Orphan Care verksamhet"
+              width={700}
+              height={500}
+              className="h-auto w-full rounded-xl object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid items-center gap-10 md:grid-cols-2">
+          <div className="md:order-1">
+            <Image
+              src="/school.png"
+              alt="Barn i skolmiljö"
+              width={700}
+              height={500}
+              className="h-auto w-full rounded-xl object-cover"
+            />
+          </div>
+          <div className="mx-auto w-full max-w-3xl space-y-5 md:order-2">
+            <h2 className="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl">
+              Skolgång för framtiden
+            </h2>
+            <p className="text-base leading-relaxed text-slate-700 sm:text-lg">
+              Utbildning är ett verktyg för att bryta den onda cirkeln av
+              fattigdom och ge kommande generationer och hjälpa hela familjer
+              från extrem fattigdom.
+              <br />
+              Vi stödjer barns utbildning genom att ge skol stöd kontinuerligt
+              diskuterar deras framsteg med lärare.
+              <br />
+              <br />
+              Hittills ger Orphan Care skolgång till 135 föräldralösa, både
+              flickor och pojkar. Men det finns många fler som behöver hjälp.
+            </p>
           </div>
         </div>
       </section>
