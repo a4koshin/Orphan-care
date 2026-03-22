@@ -8,45 +8,29 @@ export const Navigations = [
     id: 2,
     name: "Om Oss",
     href: "/omoss",
-    children: [
-      {
-        id: 21,
-        name: "Om Orphan Care",
-        href: "/omoss/om-orphan-care",
-      },
-      {
-        id: 22,
-        name: "Historik",
-        href: "/omoss/historik",
-      },
-    ],
-  },
-  {
-    id: 3,
-    name: "Mal Och Vision",
-    href: "/mal-och-vision",
+   
   },
   {
     id: 4,
     name: "Donation",
     href: "/donation",
-    children: [
-      {
-        id: 41,
-        name: "Donation Via Paypal",
-        href: "/donation/donation-via-paypal",
-      },
-      {
-        id: 42,
-        name: "Donation Via Swish",
-        href: "/donation/donation-via-swish",
-      },
-      {
-        id: 43,
-        name: "Donation Via Bank",
-        href: "/donation/donation-via-bank",
-      },
-    ],
+    // children: [
+    //   {
+    //     id: 41,
+    //     name: "Donation Via Paypal",
+    //     href: "/donation/donation-via-paypal",
+    //   },
+    //   {
+    //     id: 42,
+    //     name: "Donation Via Swish",
+    //     href: "/donation/donation-via-swish",
+    //   },
+    //   {
+    //     id: 43,
+    //     name: "Donation Via Bank",
+    //     href: "/donation/donation-via-bank",
+    //   },
+    // ],
   },
   {
     id: 5,
@@ -54,7 +38,7 @@ export const Navigations = [
     href: "/nyheter",
   },
   {
-    id:6 ,
+    id: 6,
     name: "Bilder",
     href: "/bilder",
   },
@@ -69,6 +53,3 @@ export const Navigations = [
     href: "/kontakt",
   },
 ];
-
-
-
