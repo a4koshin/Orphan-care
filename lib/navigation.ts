@@ -1,4 +1,17 @@
-export const Navigations = [
+type NavigationChild = {
+  id: number;
+  name: string;
+  href: string;
+};
+
+type NavigationItem = {
+  id: number;
+  name: string;
+  href: string;
+  children?: NavigationChild[];
+};
+
+export const Navigations: NavigationItem[] = [
   {
     id: 0,
     name: "Hjem",
