@@ -18,7 +18,7 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-x-2">
-            <Image src="/thelogo.png" alt="Logo" width={200} height={200} priority />
+            <Image src="/thelogo.png" alt="Logotyp" width={200} height={200} priority />
           </Link>
 
           {/* Desktop Navigation */}
@@ -108,7 +108,7 @@ const Header = () => {
                         onClick={() => setOpenSub(isSubOpen ? null : item.id)}
                         className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-md"
                         aria-expanded={isSubOpen}
-                        aria-label={`Toggle ${item.name} submenu`}
+                        aria-label={`Visa eller dölj undermeny för ${item.name}`}
                       >
                         <RiArrowDownSLine
                           className={`text-lg transition-transform ${
