@@ -14,16 +14,16 @@ const DonationPage = () => {
         </p>
 
         <h1 className="mt-5 text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl">
-          Bringing Hope, Care, and Opportunity
-          <span className="mt-2 block text-emerald-600">For Every Child</span>
+          Skapar hopp, omsorg och möjligheter
+          <span className="mt-2 block text-emerald-600">För varje barn</span>
         </h1>
 
         <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-slate-700 sm:text-lg">
-          Orphan Care is a charity organization dedicated to supporting
-          orphaned and vulnerable children through education, daily care, and
-          long-term guidance. With the help of donors and volunteers, we work
-          to create safe environments where children can grow with dignity,
-          confidence, and a brighter future.
+          Orphan Care är en välgörenhetsorganisation som arbetar för att stödja
+          föräldralösa och utsatta barn genom utbildning, daglig omsorg och
+          långsiktig vägledning. Med hjälp av givare och volontärer skapar vi
+          trygga miljöer där barn kan växa upp med värdighet, självförtroende
+          och en ljusare framtid.
         </p>
 
         <div className="mx-auto mt-10 grid max-w-3xl gap-4 sm:grid-cols-2">
@@ -31,7 +31,7 @@ const DonationPage = () => {
             <div className="flex h-14 items-center justify-center">
               <Image
                 src="/paypallogo.svg"
-                alt="PayPal logo"
+                alt="PayPal-logotyp"
                 width={140}
                 height={40}
                 className="h-10 w-auto object-contain"
@@ -47,7 +47,7 @@ const DonationPage = () => {
             <div className="flex h-14 items-center justify-center">
               <Image
                 src="/swishlogo.jpeg"
-                alt="Swish logo"
+                alt="Swish-logotyp"
                 width={140}
                 height={40}
                 className="h-10 w-auto object-contain"
