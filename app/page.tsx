@@ -24,10 +24,10 @@ const HomePage = () => {
     <main>
       <section className="relative h-screen w-full overflow-hidden">
         {heroImg.map((img, index) => (
-          <Image
-            key={img.id}
-            src={img.image}
-            alt="Orphan Care hero image"
+            <Image
+              key={img.id}
+              src={img.image}
+              alt="Orphan Care startsidesbild"
             fill
             priority={index === 0}
             className={`object-cover transition-opacity duration-700 ${
@@ -47,9 +47,9 @@ const HomePage = () => {
               Bygger en ljusare framtid för föräldralösa barn
             </h1>
             <p className="text-base leading-relaxed text-white/90 sm:text-lg">
-              Through quality education, compassionate care, and continuous
-              support, we empower orphaned children to rise above life’s
-              challenges.
+              Genom utbildning av hög kvalitet, medkännande omsorg och
+              kontinuerligt stöd hjälper vi föräldralösa barn att övervinna
+              livets utmaningar.
             </p>
             <div className="flex justify-center items-center flex-wrap gap-3">
               <a
@@ -71,7 +71,7 @@ const HomePage = () => {
               <button
                 key={img.id}
                 type="button"
-                aria-label={`Go to slide ${index + 1}`}
+                aria-label={`Gå till bild ${index + 1}`}
                 onClick={() => setCurrentIndex(index)}
                 className={`h-2.5 rounded-full transition-all ${
                   index === currentIndex ? "w-8 bg-white" : "w-2.5 bg-white/60"
@@ -190,7 +190,7 @@ const HomePage = () => {
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
             </span>
-            Nyheter & Event
+            Nyheter & evenemang
           </p>
           <h2 className="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl">
             Bilder från vår verksamhet
@@ -216,11 +216,11 @@ const HomePage = () => {
                 ❤
               </div>
               <h3 className="mt-3 text-3xl font-semibold leading-tight text-slate-900">
-                Donate to Orphan Care
+                Donera till Orphan Care
               </h3>
               <p className="mt-3 max-w-md text-sm leading-relaxed text-slate-600">
-                Support us in our mission to provide education, care, and hope
-                for orphaned children.
+                Stöd oss ​​i vårt uppdrag att ge utbildning, vård och hopp till
+                föräldralösa barn.
               </p>
 
               <div className="mt-7">
@@ -228,7 +228,7 @@ const HomePage = () => {
                   <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-white">
                     <Image
                       src="/pic1.jpg"
-                      alt="Supporter 1"
+                      alt="Stödperson 1"
                       fill
                       className="object-cover"
                     />
@@ -236,7 +236,7 @@ const HomePage = () => {
                   <div className="-ml-2.5 relative h-10 w-10 overflow-hidden rounded-full border-2 border-white">
                     <Image
                       src="/pic2.jpg"
-                      alt="Supporter 2"
+                      alt="Stödperson 2"
                       fill
                       className="object-cover"
                     />
@@ -244,14 +244,14 @@ const HomePage = () => {
                   <div className="-ml-2.5 relative h-10 w-10 overflow-hidden rounded-full border-2 border-white">
                     <Image
                       src="/pic3.jpg"
-                      alt="Supporter 3"
+                      alt="Stödperson 3"
                       fill
                       className="object-cover"
                     />
                   </div>
                 </div>
                 <p className="mt-2 text-xs font-medium text-slate-700">
-                  Join our 300+ supporters
+                  Gå med i våra 300+ supportrar
                 </p>
               </div>
             </div>
@@ -260,40 +260,40 @@ const HomePage = () => {
               <a
                 href="/donation"
                 className="flex w-full items-center justify-center gap-2 rounded-full bg-sky-100 px-6 py-3 text-base font-semibold text-slate-800 transition hover:bg-sky-200 sm:w-auto"
-                aria-label="Donate with PayPal"
+                aria-label="Donera med PayPal"
               >
                 <span className="relative h-6 w-6 overflow-hidden rounded-full bg-white">
-                  <Image
-                    src="/paypallogo.svg"
-                    alt="PayPal logo"
-                    fill
-                    className="object-contain p-0.5"
-                  />
+                    <Image
+                      src="/paypallogo.svg"
+                      alt="PayPal-logotyp"
+                      fill
+                      className="object-contain p-0.5"
+                    />
                 </span>
                 Paypal
               </a>
               <a
                 href="/donation"
                 className="flex w-full items-center justify-center gap-2 rounded-full bg-cyan-100 px-6 py-3 text-base font-semibold text-slate-800 transition hover:bg-cyan-200 sm:w-auto"
-                aria-label="Donate with Swish"
+                aria-label="Donera med Swish"
               >
                 <span className="relative h-6 w-6 overflow-hidden rounded-full bg-white">
-                  <Image
-                    src="/swishlogo.jpeg"
-                    alt="Swish logo"
-                    fill
-                    className="object-contain p-0.5"
-                  />
+                    <Image
+                      src="/swishlogo.jpeg"
+                      alt="Swish-logotyp"
+                      fill
+                      className="object-contain p-0.5"
+                    />
                 </span>
                 Swish
               </a>
               <a
                 href="/donation"
                 className="flex w-full items-center justify-center gap-2 rounded-full bg-amber-100 px-6 py-3 text-base font-semibold text-slate-800 transition hover:bg-amber-200 sm:w-auto"
-                aria-label="Donate directly"
+                aria-label="Donera direkt"
               >
                 <span className="text-base">☕</span>
-                Donate Now
+                Donera nu
               </a>
             </div>
           </div>
