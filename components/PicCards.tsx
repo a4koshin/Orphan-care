@@ -12,7 +12,7 @@ const PicCard = ({
   title,
   description,
   image,
-  alt = "card image",
+  alt = "kortbild",
 }: PicCardProps) => {
   return (
     <article className="h-full w-full overflow-hidden rounded-xl bg-white shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl">
