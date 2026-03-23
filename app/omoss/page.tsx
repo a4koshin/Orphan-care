@@ -16,16 +16,16 @@ const AboutPage = () => {
           </p>
 
           <h1 className="mt-5 text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl">
-            Bringing Hope, Care, and Opportunity
-            <span className="mt-2 block text-emerald-600">For Every Child</span>
+            Skapar hopp, omsorg och möjligheter
+            <span className="mt-2 block text-emerald-600">För varje barn</span>
           </h1>
 
           <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-slate-700 sm:text-lg">
-            Orphan Care is a charity organization dedicated to supporting
-            orphaned and vulnerable children through education, daily care, and
-            long-term guidance. With the help of donors and volunteers, we work
-            to create safe environments where children can grow with dignity,
-            confidence, and a brighter future.
+            Orphan Care är en välgörenhetsorganisation som arbetar för att
+            stödja föräldralösa och utsatta barn genom utbildning, daglig
+            omsorg och långsiktig vägledning. Med hjälp av givare och
+            volontärer skapar vi trygga miljöer där barn kan växa upp med
+            värdighet, självförtroende och en ljusare framtid.
           </p>
         </div>
       </section>
@@ -60,12 +60,12 @@ const AboutPage = () => {
 
           <div>
             <div className="relative overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-[0_18px_40px_rgba(15,23,42,0.08)]">
-              <Image
-                src="/who.png"
-                alt="Orphan Care team and mission"
-                width={1200}
-                height={800}
-                className="h-auto w-full object-cover"
+                <Image
+                  src="/who.png"
+                  alt="Orphan Cares team och uppdrag"
+                  width={1200}
+                  height={800}
+                  className="h-auto w-full object-cover"
                 priority
               />
             </div>
@@ -141,10 +141,10 @@ const AboutPage = () => {
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
               </span>
-              Purpose
+              Syfte
             </p>
             <h2 className="mt-3 text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl">
-              Mission and Vision
+              Uppdrag och vision
             </h2>
           </div>
 
