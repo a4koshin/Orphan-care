@@ -17,11 +17,11 @@ const Footer = () => {
 
   const footerNavs = [
     {
-      title: "Company",
+      title: "Om Orphan Care",
       items: Navigations.slice(0, 4),
     },
     {
-      title: "Support",
+      title: "Engagera dig",
       items: Navigations.slice(4, 8),
     },
   ];
@@ -42,13 +42,14 @@ const Footer = () => {
                 />
               </div>
               <span className="text-3xl font-semibold tracking-tight text-slate-900">
-                Orphan Care
+                Orphan Care Foundation
               </span>
             </div>
 
             <p className="max-w-sm text-base leading-relaxed text-slate-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis.
+              Vi arbetar för att varje föräldralöst barn ska få en trygg
+              uppväxt, utbildning och långsiktigt stöd, så att de kan växa med
+              hopp, värdighet och framtidstro.
             </p>
 
             <div className="flex items-center gap-5 text-slate-900">
@@ -113,7 +114,7 @@ const Footer = () => {
           </div>
 
           <div className="space-y-5 lg:col-span-4">
-            <h3 className="text-xl font-semibold text-slate-900">Contact Us</h3>
+            <h3 className="text-xl font-semibold text-slate-900">Kontakta oss</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-50 text-green-700">
@@ -146,21 +147,21 @@ const Footer = () => {
       <div className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-6 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
           <p className="text-sm text-slate-500">
-            © {currentYear} Orphan Care. All rights reserved.
+            © {currentYear} Orphan Care. Alla rättigheter förbehållna.
           </p>
 
           <div className="flex flex-wrap gap-6 text-sm">
             <Link href="/privacy" className="text-slate-500 transition hover:text-green-600">
-              Privacy Policy
+              Integritetspolicy
             </Link>
             <Link href="/terms" className="text-slate-500 transition hover:text-green-600">
-              Terms of Use
+              Användarvillkor
             </Link>
             <Link href="/legal" className="text-slate-500 transition hover:text-green-600">
-              Legal
+              Juridik
             </Link>
             <Link href="/sitemap" className="text-slate-500 transition hover:text-green-600">
-              Site Map
+              Webbplatskarta
             </Link>
           </div>
         </div>
