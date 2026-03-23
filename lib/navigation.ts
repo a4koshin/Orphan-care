@@ -14,7 +14,7 @@ type NavigationItem = {
 export const Navigations: NavigationItem[] = [
   {
     id: 0,
-    name: "Hjem",
+    name: "Hem",
     href: "/",
   },
   {
@@ -57,7 +57,7 @@ export const Navigations: NavigationItem[] = [
   },
   {
     id: 7,
-    name: "Videos",
+    name: "Videor",
     href: "/videos",
   },
   {
