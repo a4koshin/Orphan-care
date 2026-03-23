@@ -12,7 +12,7 @@ const Header = () => {
   const [openSub, setOpenSub] = useState<number | null>(null);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-3xl border-b border-gray-100">
+    <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Top Bar */}
         <div className="flex h-16 items-center justify-between">
