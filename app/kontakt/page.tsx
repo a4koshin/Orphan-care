@@ -45,7 +45,7 @@ const ContactPage = () => {
             </div>
 
             <h3 className="mt-6 text-base font-semibold text-slate-900">
-              Muqdisho office
+              Mogadishu-kontor
             </h3>
             <div className="mt-3 space-y-4 text-sm leading-relaxed text-slate-700">
               <div className="rounded-xl border border-slate-200 p-4">
@@ -99,7 +99,7 @@ const ContactPage = () => {
               <p className="text-sm font-semibold text-slate-900">
                 SALAAM SOMALI BANK
               </p>
-              <p className="mt-1 text-sm text-slate-700">Acc No 30179046</p>
+              <p className="mt-1 text-sm text-slate-700">Konto nr 30179046</p>
             </div>
           </article>
 
@@ -113,14 +113,14 @@ const ContactPage = () => {
                   htmlFor="name"
                   className="mb-1 block text-sm font-medium text-slate-700"
                 >
-                  Name
+                  Namn
                 </label>
                 <input
                   id="name"
                   name="name"
                   type="text"
                   className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100"
-                  placeholder="Your name"
+                  placeholder="Ditt namn"
                 />
               </div>
 
@@ -129,7 +129,7 @@ const ContactPage = () => {
                   htmlFor="email"
                   className="mb-1 block text-sm font-medium text-slate-700"
                 >
-                  E-mail
+                  E-post
                 </label>
                 <input
                   id="email"
@@ -145,7 +145,7 @@ const ContactPage = () => {
                   htmlFor="phone"
                   className="mb-1 block text-sm font-medium text-slate-700"
                 >
-                  Phone
+                  Telefon
                 </label>
                 <input
                   id="phone"
@@ -161,14 +161,14 @@ const ContactPage = () => {
                   htmlFor="message"
                   className="mb-1 block text-sm font-medium text-slate-700"
                 >
-                  Message
+                  Meddelande
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={5}
                   className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100"
-                  placeholder="Write your message..."
+                  placeholder="Skriv ditt meddelande..."
                 />
               </div>
 
