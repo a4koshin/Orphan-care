@@ -123,7 +123,7 @@ const HomePage = () => {
           </div>
           <div className="md:order-2">
             <Image
-              src="/who.png"
+              src="/img2.jpg"
               alt="Orphan Care verksamhet"
               width={700}
               height={500}
@@ -149,7 +149,7 @@ const HomePage = () => {
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div className="md:order-1">
             <Image
-              src="/school.png"
+              src="/img1.jpg"
               alt="Barn i skolmiljö"
               width={700}
               height={500}
