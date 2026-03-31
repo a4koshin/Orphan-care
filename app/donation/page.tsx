@@ -27,30 +27,37 @@ const DonationPage = () => {
         </p>
 
         <div className="mx-auto mt-10 grid max-w-3xl gap-4 sm:grid-cols-2">
-          <article className="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm">
-            <div className="flex h-14 items-center justify-center">
-              <Image
-                src="/paypallogo.svg"
-                alt="PayPal-logotyp"
-                width={140}
-                height={40}
-                className="h-10 w-auto object-contain"
-              />
-            </div>
-            <h2 className="mt-4 text-lg font-semibold text-slate-900">PayPal</h2>
-            <p className="mt-2 text-sm text-slate-600">
-              Donera snabbt och säkert via PayPal.
-            </p>
-          </article>
+          <a
+            href="https://paypal.me/orphancare100"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm transition hover:shadow-md"
+          >
+            <article>
+              <div className="flex h-14 items-center justify-center">
+                <Image
+                  src="/paypallogo.svg"
+                  alt="PayPal-logotyp"
+                  width={140}
+                  height={40}
+                  className="h-10 w-auto object-contain"
+                />
+              </div>
+              <h2 className="mt-4 text-lg font-semibold text-slate-900">PayPal</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Donera snabbt och säkert via PayPal.
+              </p>
+            </article>
+          </a>
 
           <article className="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm">
-            <div className="flex h-14 items-center justify-center">
+            <div className="flex h-56 items-center justify-center overflow-hidden">
               <Image
-                src="/swishlogo.jpeg"
+                src="/swish.jpeg"
                 alt="Swish-logotyp"
-                width={140}
-                height={40}
-                className="h-10 w-auto object-contain"
+                width={260}
+                height={260}
+                className="h-full w-auto object-contain"
               />
             </div>
             <h2 className="mt-4 text-lg font-semibold text-slate-900">Swish</h2>
