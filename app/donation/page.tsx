@@ -66,6 +66,22 @@ const DonationPage = () => {
               Stöd vårt arbete genom en enkel Swish-donation.
             </p>
           </article>
+
+          <article className="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm">
+            <div className="flex h-14 items-center justify-center">
+              <Image
+                src="/salaam.ico"
+                alt="Salaam Bank-logotyp"
+                width={56}
+                height={56}
+                className="h-14 w-14 object-contain"
+              />
+            </div>
+            <h2 className="mt-4 text-lg font-semibold text-slate-900">Salaam Bank</h2>
+            <p className="mt-2 text-sm text-slate-600">
+              Kontonummer: <span className="font-semibold text-slate-900">30179046</span>
+            </p>
+          </article>
         </div>
       </div>
     </section>
