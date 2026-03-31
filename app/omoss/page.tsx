@@ -61,7 +61,7 @@ const AboutPage = () => {
           <div>
             <div className="relative overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-[0_18px_40px_rgba(15,23,42,0.08)]">
                 <Image
-                  src="/who.png"
+                  src="/news18.jpg"
                   alt="Orphan Cares team och uppdrag"
                   width={1200}
                   height={800}
@@ -80,7 +80,7 @@ const AboutPage = () => {
             <div className="w-full">
               <div className="relative h-full min-h-[260px] overflow-hidden rounded-2xl border border-emerald-200 bg-white sm:min-h-[320px] lg:min-h-[520px]">
                 <Image
-                  src="/poverty.png"
+                  src="/new14.jpg"
                   alt="Historisk bild av utmaningar och fattigdom"
                   fill
                   sizes="(min-width: 1024px) 320px, 100vw"
