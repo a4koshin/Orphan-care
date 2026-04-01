@@ -8,9 +8,9 @@ interface VidoeData {
 export const videoData: VidoeData[] = [
   {
     id: 0,
-    title: "Orphan Care Somalia 2019",
+    title: "Eid al-Fitr 2026",
     description: "Hjälper barn i Somalia",
-    videoUrl: "https://youtu.be/ipuwGTm6fvg?si=Ki_n_CORdyZX8rYw",
+    videoUrl: "https://www.facebook.com/share/v/1EWGLQvV42/",
   },
   {
     id: 1,
