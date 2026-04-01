@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
-  FaGoogle,
-  FaEnvelope,
-  FaPhoneAlt,
-} from "react-icons/fa";
+import { FaFacebookF, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { Navigations } from "@/lib/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -54,39 +46,13 @@ const Footer = () => {
 
             <div className="flex items-center gap-5 text-slate-900">
               <a
-                href="https://www.facebook.com/InnvandreriOstfold"
+                href="https://www.facebook.com/profile.php?id=100064670530767&sk=mentions"
                 className="transition hover:text-green-600"
                 aria-label="Facebook"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaFacebookF className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="transition hover:text-green-600"
-                aria-label="Twitter"
-              >
-                <FaTwitter className="h-5 w-5" />
-              </a>
-              <a
-                href="https://www.instagram.com/innvandrerforumostfold/"
-                className="transition hover:text-green-600"
-                aria-label="Instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="transition hover:text-green-600"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedinIn className="h-5 w-5" />
-              </a>
-              <a href="#" className="transition hover:text-green-600" aria-label="Google">
-                <FaGoogle className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -114,7 +80,9 @@ const Footer = () => {
           </div>
 
           <div className="space-y-5 lg:col-span-4">
-            <h3 className="text-xl font-semibold text-slate-900">Kontakta oss</h3>
+            <h3 className="text-xl font-semibold text-slate-900">
+              Kontakta oss
+            </h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-50 text-green-700">
@@ -124,7 +92,7 @@ const Footer = () => {
                   href="tel:98765432154"
                   className="text-base text-slate-700 transition hover:text-green-600"
                 >
-                  (+91) 98765 4321 54
+                  +46739600186
                 </a>
               </div>
 
@@ -136,7 +104,7 @@ const Footer = () => {
                   href="mailto:support@mail.com"
                   className="text-base text-slate-700 transition hover:text-green-600"
                 >
-                  support@mail.com
+                  Info@orphancare.net
                 </a>
               </div>
             </div>
@@ -151,16 +119,28 @@ const Footer = () => {
           </p>
 
           <div className="flex flex-wrap gap-6 text-sm">
-            <Link href="/privacy" className="text-slate-500 transition hover:text-green-600">
+            <Link
+              href="/privacy"
+              className="text-slate-500 transition hover:text-green-600"
+            >
               Integritetspolicy
             </Link>
-            <Link href="/terms" className="text-slate-500 transition hover:text-green-600">
+            <Link
+              href="/terms"
+              className="text-slate-500 transition hover:text-green-600"
+            >
               Användarvillkor
             </Link>
-            <Link href="/legal" className="text-slate-500 transition hover:text-green-600">
+            <Link
+              href="/legal"
+              className="text-slate-500 transition hover:text-green-600"
+            >
               Juridik
             </Link>
-            <Link href="/sitemap" className="text-slate-500 transition hover:text-green-600">
+            <Link
+              href="/sitemap"
+              className="text-slate-500 transition hover:text-green-600"
+            >
               Webbplatskarta
             </Link>
           </div>
