@@ -59,7 +59,7 @@ const HomePage = () => {
                 Donera nu
               </a>
               <a
-                href="/omoss/om-orphan-care"
+                href="/nyheter"
                 className="rounded-lg border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
               >
                 Läs mer
